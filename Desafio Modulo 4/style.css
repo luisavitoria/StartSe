@@ -1,0 +1,166 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Twinkle+Star&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100%;
+}
+
+nav {
+    text-align: right;
+    margin-right: 50px;
+    margin: 20px 50px 50px 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #71c5e8;
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+}
+
+a:hover {
+    background-color: #505A5B;
+    color: #fff;
+}
+
+h2 {
+    font: 1.6rem 'Patrick Hand', cursive;
+    text-align: center;
+    color: #505A5B;
+}
+
+.container h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+   width: 40%;
+   text-align: end;
+}
+
+.imagens {
+    width: 40%;
+    height: 500px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens img {
+    width: 50%;
+    min-width: 200px;
+    height: 320px;
+    border-radius: 20px;
+}
+#fantasias {
+    background-color: #6b9bb1;
+    
+}
+
+#saoJoao {
+    background-color: #DCEDFF;
+}
+
+#criancas {
+    background-color: #8F91A2;
+}
+
+footer {
+    padding: 50px;
+}
+footer p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container-contatos {
+    display: flex;
+    justify-content: center;
+}
+
+.container-contatos .icone {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.item-contatos {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    header img {
+        width: 100%;
+    }
+    
+
+    .container {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .descricao {
+        width: 80%;
+    }
+    .container .imagens {
+        margin: 0;
+        height: 400px;
+    }
+
+    .imagens img {
+        height: 300px;
+    }
+
+    .container-contatos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luísa Anjos" />
+    <meta name="keywords" content="artesanato, encomenda, fantasias, roupas infantis" />
+    <meta name="description" content="Encomendas e pronta entrega de fantasias e roupas para crianças." />
+    <link rel="stylesheet" href="style.css">
+    <title>Arte dos Anjos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#fantasias">Fantasias</a>
+            <a href="#saoJoao">São João</a>
+            <a href="#criancas">Crianças</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+
+        <img src="assets/imgs/banner.png" alt="Logo Arte dos Anjos">
+
+        <h2>Encomendas e pronta entrega de fantasias e roupas para crianças! </h2>
+        <h2>Feito por <span id="txt-negrito">Rosângela dos Anjos</span>  &#x2764;</h2>
+    </header>
+
+    <section id="fantasias" class="container">
+        <div class="descricao">
+            <h2>Fantasias</h2>
+            <p>Produzimos fantasias temáticas para crianças! Carnaval, desenhos animados, halloween e muito mais!</p>
+
+        </div>
+
+        <div class="imagens">
+            <img class="slide" src="assets/imgs/fantasia3.PNG" alt="Fantasia infantil">
+            <img class="slide" src="assets/imgs/fantasia4.PNG" alt="Fantasia infantil">
+            <img class="slide" src="assets/imgs/fantasia6.PNG" alt="Fantasia infantil">
+            <img class="slide" src="assets/imgs/fantasia7.PNG" alt="Fantasia infantil">
+        </div>
+
+    </section>
+
+    <section id="saoJoao" class="container">
+        <div class="descricao">
+            <h2>São João</h2>
+            <p>Vestidos coloridos com chita para sua criança dançar muita quadrilha e ficar linda!</p>
+
+        </div>
+
+        <div class="imagens">
+            <img class='slide2' src="assets/imgs/jun1.jpeg" alt="Roupa junina">
+            <img class="slide2" src="assets/imgs/jun2.jpeg" alt="Roupa junina">
+            <img class="slide2" src="assets/imgs/jun3.jpeg" alt="Roupa junina">
+            <img class="slide2" src="assets/imgs/jun4.jpeg" alt="Roupa junina">
+        </div>
+    </section>
+
+    <section id="criancas" class="container">
+        <div class="descricao">
+            <h2>Crianças</h2>
+            <p>Roupas leves, divertidas e com cara de criança!</p>
+
+        </div>
+
+        <div class="imagens">
+            <img src="assets/imgs/crianca1.PNG" alt="Roupa de criança" class="slide3">
+            <img src="assets/imgs/crianca3.PNG" alt="Roupa de criança" class="slide3">
+            <img src="assets/imgs/crianca4.PNG" alt="Roupa de criança" class="slide3">
+            <img src="assets/imgs/crianca5.PNG" alt="Roupa de criança" class="slide3">
+        </div>
+    </section>
+
+    <footer id="contatos">
+        <h2>Contatos</h2>
+        <p>Entre em contato conosco para encomendas!</p>
+
+        <div class='container-contatos'>
+            <div class="item-contatos"> 
+                <img class='icone' src="assets/imgs/whatsapp.png"  alt=""><p>+55 82 999657-4301 </p>
+            </div>
+
+            <div class="item-contatos">
+                <a href="https://www.instagram.com/arte_dos_anjos_al" target="_blank"><img class='icone' src="assets/imgs/instagram.png" alt=""></a><p>@arte_dos_anjos_al </p>
+            </div>
+            
+            <div class="item-contatos">
+                <a href="mailto: rsanjos-485@hotmail.com"><img class='icone' src="assets/imgs/o-email.png"  alt=""></a><p>rsanjos-485@hotmail.com</p>
+            </div>
+
+            
+        </div>
+
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          var y = document.getElementsByClassName('slide2');
+          var z = document.getElementsByClassName("slide3");
+
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+
+          for (i = 0; i < y.length; i++) {
+            y[i].style.display = "none";  
+          }
+
+          for (i = 0; i < z.length; i++) {
+            z[i].style.display = "none";  
+          }
+
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1} 
+          if (myIndex > y.length) {myIndex = 1}
+          if (myIndex > z.length) {myIndex = 1} 
+
+          x[myIndex-1].style.display = "block";  
+          y[myIndex-1].style.display = "block";  
+          z[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000);
+        }
+
+    </script>
+
+</body>
+
+</html>
